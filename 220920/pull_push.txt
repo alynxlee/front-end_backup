@@ -1,0 +1,221 @@
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920
+$ git clone https://github.com/alynxlee/220920-js.git
+Cloning into '220920-js'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920
+$ cd 220920-js/
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\354\235\264\355\230\234\354\247\20496_220920-js.html"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git add .
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git commit -m "이혜진 html 문서 추가"
+[main dc7d0b8] 이혜진 html 문서 추가
+ 1 file changed, 25 insertions(+)
+ create mode 100644 "\354\235\264\355\230\234\354\247\20496_220920-js.html"
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git log --oneline
+dc7d0b8 (HEAD -> main) 이혜진 html 문서 추가
+d231530 (origin/main, origin/HEAD) 내용 수정
+392d8f7 내용 수정
+7403baf Update README.md
+7d53aa9 Initial commit
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+use.name=alynxlee
+user.email=alynxlee2@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/alynxlee/220920-js.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 680 bytes | 680.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alynxlee/220920-js.git
+   d231530..dc7d0b8  main -> main
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ ^C
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ cd ../
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920
+$ cd -
+/d/프론트엔드/220920/220920-js
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   "\354\235\264\355\230\234\354\247\20496_220920-js.html"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git add .
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git commit -m '문제해결 문서 추가'
+[main 92a52b8] 문제해결 문서 추가
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status -s
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git log --oneline
+92a52b8 (HEAD -> main) 문제해결 문서 추가
+dc7d0b8 (origin/main, origin/HEAD) 이혜진 html 문서 추가
+d231530 내용 수정
+392d8f7 내용 수정
+7403baf Update README.md
+7d53aa9 Initial commit
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git log --oneline --graph
+* 92a52b8 (HEAD -> main) 문제해결 문서 추가
+* dc7d0b8 (origin/main, origin/HEAD) 이혜진 html 문서 추가
+* d231530 내용 수정
+* 392d8f7 내용 수정
+* 7403baf Update README.md
+* 7d53aa9 Initial commit
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/alynxlee/220920-js.git
+   dc7d0b8..92a52b8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 885 bytes | 38.00 KiB/s, done.
+From https://github.com/alynxlee/220920-js
+ * branch            main       -> FETCH_HEAD
+   92a52b8..f8a894b  main       -> origin/main
+Updating 92a52b8..f8a894b
+Fast-forward
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git commit -am '집에서 공부함 내용 추가'
+[main 7be589e] 집에서 공부함 내용 추가
+ 1 file changed, 2 insertions(+)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 783 bytes | 71.00 KiB/s, done.
+From https://github.com/alynxlee/220920-js
+   f8a894b..ea9e2aa  main       -> origin/main
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main|MERGING)
+$ git commit -am '충돌 내용 수정'
+[main 97afef0] 충돌 내용 수정
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git pull
+Already up to date.
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/220920/220920-js (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 713 bytes | 713.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/alynxlee/220920-js.git
+   ea9e2aa..97afef0  main -> main

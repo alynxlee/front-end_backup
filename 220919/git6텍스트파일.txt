@@ -1,0 +1,121 @@
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6
+$ git init
+Initialized empty Git repository in D:/프론트엔드/git6/.git/
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ touch "readme.md"
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git add .
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git commit -m "readme.me 파일 생성"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '307-13@DESKTOP-A5ECO24.(none)')
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git config --global use.name "alynxlee"
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git config --global user.email "alynxlee2@gmail.com"
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git --list
+unknown option: --list
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+use.name=alynxlee
+user.email=alynxlee2@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git commit -m "readme.me 파일 생성"
+[main (root-commit) 5511bbc] readme.me 파일 생성
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git log --oneline
+5511bbc (HEAD -> main) readme.me 파일 생성
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git add .
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git commit -m "readme.md 파일 안에 내용 1 작성"
+[main 71cd6fa] readme.md 파일 안에 내용 1 작성
+ 1 file changed, 1 insertion(+)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git commit -am "readme.md 파일 안에 내용 2 작성"
+[main a2aac0a] readme.md 파일 안에 내용 2 작성
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git log --oneline
+a2aac0a (HEAD -> main) readme.md 파일 안에 내용 2 작성
+71cd6fa readme.md 파일 안에 내용 1 작성
+5511bbc readme.me 파일 생성
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git remote add origin https://github.com/alynxlee/readme.md.git
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git6 (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (9/9), 752 bytes | 752.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alynxlee/readme.md.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+

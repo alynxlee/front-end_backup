@@ -1,0 +1,121 @@
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7
+$ cd /d
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d
+$ cd 프론트엔드
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드
+$ cd git7
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7
+$ git init
+Initialized empty Git repository in D:/프론트엔드/git7/.git/
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git status -s
+?? readme.md
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git add readme.md
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git status -s
+A  readme.md
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git commit -m 'readme 파일 추가'
+[main (root-commit) 1ad0190] readme 파일 추가
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git log --oneline
+1ad0190 (HEAD -> main) readme 파일 추가
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git commit -am '문서 설명 추가'
+[main cca48e0] 문서 설명 추가
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git log --oneline
+cca48e0 (HEAD -> main) 문서 설명 추가
+1ad0190 readme 파일 추가
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git commit -am '날짜 추가'
+[main 3128131] 날짜 추가
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git log --oneline
+3128131 (HEAD -> main) 날짜 추가
+cca48e0 문서 설명 추가
+1ad0190 readme 파일 추가
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git remote add origin https://github.com/alynxlee/readme.md_2.git
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+use.name=alynxlee
+user.email=alynxlee2@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/alynxlee/readme.md_2.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (9/9), 773 bytes | 773.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alynxlee/readme.md_2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git add .
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git commit -m '제목 수정'
+[main 8c3070a] 제목 수정
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git log --oneline
+8c3070a (HEAD -> main) 제목 수정
+3128131 (origin/main) 날짜 추가
+cca48e0 문서 설명 추가
+1ad0190 readme 파일 추가
+
+307-13@DESKTOP-A5ECO24 MINGW64 /d/프론트엔드/git7 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/alynxlee/readme.md_2.git
+   3128131..8c3070a  main -> main
+branch 'main' set up to track 'origin/main'.
